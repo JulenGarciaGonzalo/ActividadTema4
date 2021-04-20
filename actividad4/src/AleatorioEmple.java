@@ -35,7 +35,7 @@ public class AleatorioEmple {
 
 				if (file.getFilePointer() == file.length())
 					break;
-
+				System.out.println("Hola");
 			} 
 			file.close(); 
 			System.out.println(" ------------------------------------------");
