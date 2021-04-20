@@ -20,6 +20,7 @@ public class AleatorioEmple {
 			pos = 0;
 			System.out.println(" ------------------------------------------");
 			System.out.println(" - - - VISUALIZO POR CONSOLA - - - - ");
+			System.out.println("Hola");
 			for (;;) {
 				file.seek(pos);
 				num = file.readInt();
