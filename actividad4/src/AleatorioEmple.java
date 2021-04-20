@@ -13,6 +13,11 @@ public class AleatorioEmple {
 	public static void clase1() {
 		System.out.println("Primera Clase");
 	}
+	
+	public static void clase2() {
+		System.out.println("Segunda Clase");
+	}
+	
 	public static void leer() throws IOException {
 		File fichero = new File("AleatorioEmple.dat");
 		RandomAccessFile file = new RandomAccessFile(fichero, "r");
