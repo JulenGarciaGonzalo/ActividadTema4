@@ -20,7 +20,6 @@ public class AleatorioEmple {
 			pos = 0;
 			System.out.println(" ------------------------------------------");
 			System.out.println(" - - - VISUALIZO POR CONSOLA - - - - ");
-			System.out.println("Hola");
 			for (;;) {
 				file.seek(pos);
 				num = file.readInt();
@@ -33,10 +32,10 @@ public class AleatorioEmple {
 				salario = file.readDouble();
 				System.out.println("Empleado: " + nom + ", numero:" + num + ", dep: " + dep + ", salario: " + salario);
 				pos = pos + 36;
-
+				System.out.println("Hola");
 				if (file.getFilePointer() == file.length())
 					break;
-				System.out.println("Hola");
+
 			} 
 			file.close(); 
 			System.out.println(" ------------------------------------------");
@@ -62,7 +61,6 @@ public class AleatorioEmple {
 			file.writeInt(dep[i]);
 			file.writeDouble(salario[i]);
 		}
-		System.out.println("Hola");
 		file.close();
 	}// fin crear
 
