@@ -7,8 +7,19 @@ public class AleatorioEmple {
 	public static void main(String[] args) throws IOException {
 		crear();
 		leer();
+		System.out.println("Hola");
 	}
 
+	public static void clase1() {
+		System.out.println("Primera Clase");
+		System.out.println("Tercer commit");
+	}
+	
+	public static void clase2() {
+		System.out.println("Segunda Clase");
+		System.out.println("Cuarto commit");
+	}
+	
 	public static void leer() throws IOException {
 		File fichero = new File("AleatorioEmple.dat");
 		RandomAccessFile file = new RandomAccessFile(fichero, "r");
@@ -20,7 +31,6 @@ public class AleatorioEmple {
 			pos = 0;
 			System.out.println(" ------------------------------------------");
 			System.out.println(" - - - VISUALIZO POR CONSOLA - - - - ");
-			System.out.println("Hola");
 			for (;;) {
 				file.seek(pos);
 				num = file.readInt();
@@ -33,10 +43,10 @@ public class AleatorioEmple {
 				salario = file.readDouble();
 				System.out.println("Empleado: " + nom + ", numero:" + num + ", dep: " + dep + ", salario: " + salario);
 				pos = pos + 36;
-
+				System.out.println("Hola");
 				if (file.getFilePointer() == file.length())
 					break;
-				System.out.println("Hola");
+
 			} 
 			file.close(); 
 			System.out.println(" ------------------------------------------");
